@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2016 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MDL Card Demo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="assets/material-design-lite.css.js" charset="utf-8"></script>
+    <style>
+      .demo-card {
+        max-width: 21.875rem; /* 350sp */
+        margin-bottom: 24px;
+      }
+
+      .demo-card--with-avatar .mdl-card__primary {
+        position: relative;
+      }
+
+      .demo-card--with-avatar .demo-card__avatar {
+        position: absolute;
+        background: #bdbdbd;
+        height: 2.5rem; /* 40sp */
+        width: 2.5rem; /* 40sp */
+        border-radius: 50%;
+      }
+
+      .demo-card--with-avatar .mdl-card--title,
+      .demo-card--with-avatar .mdl-card--subtitle {
+        margin-left: 56px;
+      }
+
+      .demo-card__16-9-media {
+        background-image: url("images/sunset.jpg");
+        background-size: 100%;
+        height: 12.313rem; /* 197sp, for 16:9 ratio with 350sp demo card width */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>MDL Cards</h1>
+      <section class="demo-typography--section mdl-typography">
+        <div class="mdl-card demo-card">
+          <div class="mdl-card__media demo-card__16-9-media"></div>
+          <div class="mdl-card__supporting-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+          </div>
+        </div>
+
+        <div class="mdl-card demo-card demo-card--with-avatar">
+          <div class="mdl-card__primary">
+            <div class="demo-card__avatar"></div>
+            <div class="mdl-card--title">Title</div>
+            <div class="mdl-card--subtitle">Subhead</div>
+          </div>
+          <div class="mdl-card__media demo-card__16-9-media"></div>
+          <div class="mdl-card__supporting-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+          </div>
+          <div class="mdl-card__actions">
+            <button class="mdl-button">Action 1</button>
+            <button class="mdl-button">Action 2</button>
+          </div>
+        </div>
+
+        <div class="mdl-card demo-card demo-card--with-avatar">
+          <div class="mdl-card__primary">
+            <div class="demo-card__avatar"></div>
+            <div class="demo-card__text">
+              <div class="mdl-card--title">Title</div>
+              <div class="mdl-card--subtitle">Subhead</div>
+            </div>
+          </div>
+          <div class="mdl-card__media demo-card__16-9-media"></div>
+          <div class="mdl-card__actions mdl-card__actions--vertical">
+            <button class="mdl-button">Action 1</button>
+            <button class="mdl-button">Action 2</button>
+          </div>
+        </div>
+
+        <div class="mdl-card demo-card">
+          <div class="mdl-card__media demo-card__16-9-media"></div>
+          <div class="mdl-card__primary">
+            <div class="mdl-card--large-title">Title goes here</div>
+            <div class="mdl-card--subtitle">Subtitle here</div>
+          </div>
+          <div class="mdl-card__actions">
+            <button class="mdl-button">Action 1</button>
+            <button class="mdl-button">Action 2</button>
+          </div>
+        </div>
+
+        <div class="mdl-card demo-card">
+          <div class="mdl-card__primary">
+            <div class="mdl-card--large-title">Title goes here</div>
+            <div class="mdl-card--subtitle">Subtitle here</div>
+          </div>
+          <div class="mdl-card__supporting-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </div>
+          <div class="mdl-card__actions">
+            <button class="mdl-button">Action 1</button>
+            <button class="mdl-button">Action 2</button>
+          </div>
+        </div>
+
+        <style>
+          .demo-card--bg-demo {
+            height: 21.875rem; /* 350sp */
+            background-image: url("images/bamboo.jpg");
+            background-size: 100%;
+          }
+
+          .demo-card--bg-demo .mdl-card__primary,
+          .demo-card--bg-demo .mdl-card__actions {
+            background: rgba(0, 0, 0, .4);
+          }
+        </style>
+        <div class="mdl-card demo-card demo-card--bg-demo">
+          <div class="mdl-card__primary">
+            <div class="mdl-card--large-title mdl-typography--color-primary-light">Title goes here</div>
+            <div class="mdl-card--subtitle mdl-typography--color-primary-light">Subtitle here</div>
+          </div>
+          <div class="mdl-card__actions">
+            <button class="mdl-button mdl-typography--color-primary-light">Action 1</button>
+            <button class="mdl-button mdl-typography--color-primary-light">Action 2</button>
+          </div>
+        </div>
+
+        <style>
+          .demo-card--small {
+            max-width: 10.938rem; /* 175sp */
+          }
+
+          .demo-card--small .mdl-card__media {
+            background-image: url("images/bamboo.jpg");
+            background-size: 100%;
+            height: 10.938rem; /* 175sp, for 1:1 ratio with 175sp demo card width */
+          }
+        </style>
+        <div class="mdl-card demo-card demo-card--small">
+          <div class="mdl-card__media">
+            <div class="mdl-card--large-title mdl-typography--color-primary-light">Title</div>
+          </div>
+          <div class="mdl-card__actions">
+            <button class="mdl-button">Action 1</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
